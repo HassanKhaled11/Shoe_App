@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.example.shoestore.model.Sharedviewmodel" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.list.ListFragment"
+        android:background="@color/moderateblue">
+
+
+        <ScrollView
+            android:id="@+id/s1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+<!-- I used Linear layout as i want views to be shown vertically
+and there is nested loop so the Linear Layout is the best choice -->
+
+            <LinearLayout
+                android:id="@+id/linearlayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+               
+            </LinearLayout>
+
+
+
+
+        </ScrollView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="@dimen/fab_margin"
+            android:layout_marginBottom="30dp"
+            android:background="@color/darkblue"
+            app:srcCompat="@drawable/ic_baseline_add_24"
+            />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.login.LoginFragment"
+        android:background="@color/moderateblue">
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="209dp"
+            android:layout_height="158dp"
+            android:layout_marginTop="36dp"
+            android:src="@drawable/shoes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="132dp"
+            android:layout_height="27dp"
+            android:layout_marginBottom="44dp"
+            android:gravity="center"
+            android:text="Shoe Store"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/namelogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/passlogin"
+            android:layout_width="284dp"
+            android:layout_height="49dp"
+            android:background="@color/white"
+            android:hint="@string/password"
+            android:textColorHint="@color/gray_600"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.779"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/namelogin"
+            app:layout_constraintVertical_bias="0.147" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="62dp"
+            android:layout_height="81dp"
+            android:layout_marginTop="280dp"
+            android:src="@drawable/person"
+            app:layout_constraintEnd_toStartOf="@+id/namelogin"
+            app:layout_constraintHorizontal_bias="0.675"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/namelogin"
+            android:layout_width="284dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="300dp"
+            android:background="@color/white"
+            android:hint="@string/username"
+            android:padding="10dp"
+            android:textColorHint="@color/gray_600"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.779"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="58dp"
+            android:layout_height="71dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/lock"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/passlogin"
+            app:layout_constraintHorizontal_bias="0.707"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.062"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/forgetbut"
+            android:layout_width="181dp"
+            android:layout_height="66dp"
+            android:layout_marginBottom="52dp"
+            android:backgroundTint="@color/moderateblue"
+            android:text="Forgot Password ?"
+            android:textColor="@color/darkblue"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/logbut"
+            android:layout_width="116dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="28dp"
+            android:backgroundTint="@color/darkblue"
+            android:text="LOGIN"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passlogin"
+            app:layout_constraintVertical_bias="0.11"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/signbut"
+            android:layout_width="116dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="244dp"
+            android:backgroundTint="@color/darkblue"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passlogin"
+            app:layout_constraintVertical_bias="0.11"
+            tools:ignore="DuplicateIds,MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+
+
+

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    android:label="Home"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.shoestore.ui.login.LoginFragment"
+        android:label="@string/Home"
+        tools:layout="@layout/login_fragment">
+        <action
+            android:id="@+id/action_loginFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment"
+            app:popUpTo="@id/welcomeFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.shoestore.ui.welcome.WelcomeFragment"
+        android:label="@string/welcome"
+        tools:layout="@layout/welcome_fragment">
+        <action
+            android:id="@+id/action_welcomeFragment_to_instructionFragment"
+            app:destination="@id/instructionFragment"
+            app:popUpTo="@id/loginFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/instructionFragment"
+        android:name="com.example.shoestore.ui.instruction.InstructionFragment"
+        android:label="Instructions"
+        tools:layout="@layout/instruction_fragment">
+        <action
+            android:id="@+id/action_instructionFragment_to_listFragment2"
+            app:destination="@id/listFragment"
+            app:popUpTo="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.shoestore.ui.list.ListFragment"
+        android:label="@string/shoelist"
+        tools:layout="@layout/list_fragment">
+        <action
+            android:id="@+id/action_listFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/loginFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.shoestore.ui.Details.DetailsFragment"
+        android:label="Add Shoe"
+        tools:layout="@layout/details_fragment">
+        <action
+            android:id="@+id/action_detailsFragment_to_listFragment"
+            app:destination="@id/listFragment"
+            app:popUpTo="@id/listFragment" />
+    </fragment>
+
+</navigation>

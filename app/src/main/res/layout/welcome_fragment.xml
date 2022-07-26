@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/moderateblue"
+    tools:context=".ui.welcome.WelcomeFragment">
+
+    <!-- constraint layout as it is simple design no nested loop -->
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="233dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="140dp"
+        android:gravity="center"
+        android:text="Welcome"
+        android:textColor="@color/darkblue"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="196dp"
+        android:layout_height="69dp"
+        android:gravity="center"
+        android:text="to"
+        android:textColor="@color/darkblue"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.633" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="271dp"
+        android:layout_height="134dp"
+        android:layout_marginBottom="264dp"
+        android:gravity="center"
+        android:text="Shoe Store"
+        android:textColor="@color/darkblue"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/welbut"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:backgroundTint="@color/darkblue"
+        android:text="Instructions>>"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.687" />
+</androidx.constraintlayout.widget.ConstraintLayout>
